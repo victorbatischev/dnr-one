@@ -1,0 +1,59 @@
+$tabletWidth: 990px;
+$mobileWidth: 768px;
+
+@mixin define-color($title, $color) {
+    --#{$title}-h: #{hue($color)};
+    --#{$title}-l: #{lightness($color)};
+    --#{$title}-s: #{saturation($color)};
+    --#{$title}-a: #{alpha($color)};
+}
+
+@function color($title, $hue: 0deg, $lightness: 0%, $saturation: 0%, $alpha: 0) {
+    @return hsla(
+        calc(var(--#{$title}-h) + #{$hue}),
+        calc(var(--#{$title}-s) + #{$saturation}),
+        calc(var(--#{$title}-l) + #{$lightness}),
+        calc(var(--#{$title}-a) + #{$alpha})
+    );
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("@/assets/fonts/Roboto-Regular.woff2");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("@/assets/fonts/Roboto-Bold.woff2");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("@/assets/fonts/Montserrat-Regular.woff2");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("@/assets/fonts/Montserrat-Bold.woff2");
+    font-weight: bold;
+}
+
+@mixin grey-input {
+    padding: 12px 18px;
+    background: color("background");
+    border: 2px solid color("border");
+    color: color("main");
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    transition: border-color 0.18s ease;
+
+    &::placeholder {
+        font-family: "Montserrat", sans-serif;
+        color: color("second");
+    }
+
+    &:focus {
+        border-color: color("link");
+        outline: none;
+    }
+}

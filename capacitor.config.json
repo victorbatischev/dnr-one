@@ -1,0 +1,6 @@
+{
+  "appId": "com.craftgroup.dnrone",
+  "appName": "dnr.one",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

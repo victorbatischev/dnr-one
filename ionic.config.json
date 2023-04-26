@@ -1,0 +1,7 @@
+{
+    "name": "dnr.one",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "custom"
+}

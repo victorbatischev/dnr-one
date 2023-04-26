@@ -1,0 +1,42 @@
+:root {
+    @include define-color("background", hsl(0, 0%, 100%));
+    @include define-color("background-hover", hsl(0, 0%, 90%));
+    @include define-color("border", hsl(0, 0%, 70%));
+    @include define-color("main", hsl(0, 0%, 12%));
+    @include define-color("second", hsl(0, 0%, 42%));
+    @include define-color("second-hover", hsl(0, 0%, 55%));
+    @include define-color("link", hsl(203, 85%, 36%));
+    @include define-color("link-hover", hsl(203, 85%, 49%));
+    @include define-color("warn", hsl(0, 85%, 36%));
+    @include define-color("warn-hover", hsl(0, 85%, 49%));
+    @include define-color("success", hsl(120, 85%, 36%));
+    @include define-color("success-hover", hsl(120, 85%, 49%));
+}
+[theme="light"] {
+    @include define-color("background", hsl(0, 0%, 100%));
+    @include define-color("background-hover", hsl(0, 0%, 90%));
+    @include define-color("border", hsl(0, 0%, 70%));
+    @include define-color("main", hsl(0, 0%, 12%));
+    @include define-color("second", hsl(0, 0%, 42%));
+    @include define-color("second-hover", hsl(0, 0%, 55%));
+    @include define-color("link", hsl(203, 85%, 36%));
+    @include define-color("link-hover", hsl(203, 85%, 49%));
+    @include define-color("warn", hsl(0, 85%, 36%));
+    @include define-color("warn-hover", hsl(0, 85%, 49%));
+    @include define-color("success", hsl(120, 85%, 36%));
+    @include define-color("success-hover", hsl(120, 85%, 49%));
+}
+[theme="dark"] {
+    @include define-color("background", hsl(0, 0%, 10%));
+    @include define-color("background-hover", hsl(0, 0%, 20%));
+    @include define-color("border", hsl(0, 0%, 40%));
+    @include define-color("main", hsl(0, 0%, 88%));
+    @include define-color("second", hsl(0, 0%, 70%));
+    @include define-color("second-hover", hsl(0, 0%, 83%));
+    @include define-color("link", hsl(203, 85%, 60%));
+    @include define-color("link-hover", hsl(203, 85%, 73%));
+    @include define-color("warn", hsl(0, 85%, 60%));
+    @include define-color("warn-hover", hsl(0, 85%, 73%));
+    @include define-color("success", hsl(120, 85%, 60%));
+    @include define-color("success-hover", hsl(120, 85%, 73%));
+}
